@@ -1,0 +1,17 @@
+{
+  "table"     : "registration",
+  "elements"  : [{
+                  "required" : 1,
+                  "name" : "rn",
+                  "type" : "text",
+                  "hydstra_table" : "site",
+                  "hydstra_field" : "station",
+                  "default" : ""
+                }
+                
+  
+  
+  
+  ]
+
+}

@@ -50,16 +50,30 @@ Code snippet.
 
   Constant used creating a default logging database location
 
+=head2 DEFAULT_TABLE_DEFINITION_DIR
+
+  Constant used to find the default json table defintions 
+
 =head1 EXPORTS
 
-  * import_to_sqlite()
+=over
+
+=item 1
+
+  import_to_sqlite()
+
+=back 
   
 
 =head1 SUBROUTINES/METHODS
 
 =head2 import_to_sqlite()
   
-Imports the QLD DNRM "|" delimited Ground Water Database files to a dated temp SQLite database
+Imports the QLD DNRM "|" delimited Ground Water Database files to a dated temp SQLite database,
+
+=head2 load_table_definition()
+  
+Load the table definitions and mappings from json config file
 
 =skip
 sub readfiles{ 
@@ -117,7 +131,7 @@ Please report any bugs in the issues wiki.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Import
+    perldoc DNRMGWDB
 
 =over 4
 

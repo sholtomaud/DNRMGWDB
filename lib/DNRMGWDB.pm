@@ -10,6 +10,8 @@ use File::Copy;
 use Logger;
 use Try::Tiny;
 
+
+
 =head1 VERSION
 
 Version 0.01
@@ -78,41 +80,63 @@ use constant FAIL    => 0;
 
 =cut
 
-use constant DEFAULT_LOGGING_DB_DIR => $Bin.'\\db';
+use constant DEFAULT_LOGGING_DB_DIR => $Bin.'\\db\\';
+
+=head2 DEFAULT_TABLE_DEFINITION_DIR
+
+  Constant used to find the default json table defintions 
+
+=cut
+
+use constant DEFAULT_TABLE_DEFINITION_DIR => $Bin.'/lib/dnrmgwdb/config/';
 
  has 'db_dir' => ( is => 'rw', isa => 'Str', required => 1, default => DEFAULT_LOGGING_DB_DIR); 
  has 'db_name' => ( is => 'rw', isa => 'Str', required => 1, default => 'GWDB.db'); 
  has 'import_dir' => ( is => 'rw', isa => 'Str', required => 1); 
+ has 'import_file' => ( is => 'rw', isa => 'Str', required => 1); 
+ has 'table_definition_dir' => ( is => 'rw', isa => 'Str', required => 1, default => DEFAULT_TABLE_DEFINITION_DIR); 
+ has 'dnrm_table' => ( is => 'rw', isa => 'Str' ); 
  has 'date'  => ( is => 'rw', isa => 'Num',  default => sub { ((localtime)[5] + 1900 ). (localtime)[4] . (localtime)[3] } ); 
  has 'time'  => ( is => 'rw', isa => 'Num', default => sub { (localtime)[2] . (localtime)[1] . (localtime)[0] }); 
 
 =head1 EXPORTS
 
-  * import_to_sqlite()
+=over
+
+=item 1
+
+  import_to_sqlite()
+
+=back 
   
 
 =head1 SUBROUTINES/METHODS
 
-=head2 import_to_sqlite()
+=head2 connect_to_db()
   
-Imports the QLD DNRM "|" delimited Ground Water Database files to a dated temp SQLite database
+Imports the QLD DNRM "|" delimited Ground Water Database files to a dated temp SQLite database,
 
 =cut
 
-sub import_to_sqlite{
+sub connect_to_db{
   my $self = shift;
+  my $db = $self->db_dir.$self->db_name;
+  my $db_dir = $self->db_dir;
+  my $import_file = $self->import_file;
   
   #Make the db dir if it doesn't exist
   mkdir ($self->db_dir) if ( ! -d $self->db_dir);
   
   try {
-    my $db = $self->db_dir.$self->db_name;
+    print "connecting to [$db]\n";
     my $dbh = DBI->connect(          
         "dbi:SQLite:dbname=$db", 
         "",                          
         "",                          
         { RaiseError => 1, AutoCommit => 0},         
     ) or die print $DBI::errstr;
+    print "connected. State: [".$DBI::state."]\n";
+    
   }
   catch{
     my $logger = Logger->new( 
@@ -122,11 +146,41 @@ sub import_to_sqlite{
         script  => $0,
         errmsg  => $_
       ); 
-      $logger->log;
+    $logger->log;
     warn "caught error: $_";
     return FAIL;
   };
+  
+  print "import_file [$import_file], import_dir [$db_dir]\n";
+  
+  
 }
+
+
+=head2 load_table_definition()
+  
+Load the table definitions and mappings from json config file
+
+=cut
+
+sub load_table_definition{
+  my $self = shift;
+  print "table def [".$self->table_definition_dir."]\n";
+  my $import_file = $self->table_definition_dir.$self->dnrm_table.'.json';
+  my $json;
+  {
+    local $/; #Enable 'slurp' mode
+    open my $fh, "<", $import_file or die print "couldn't open config file [$import_file]\n";
+    $json = <$fh>;
+    close $fh;
+  };
+  my $data = decode_json($json);
+  return $data;
+}
+
+
+
+
 
 =skip
 sub readfiles{ 
@@ -184,7 +238,7 @@ Please report any bugs in the issues wiki.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Import
+    perldoc DNRMGWDB
 
 =over 4
 

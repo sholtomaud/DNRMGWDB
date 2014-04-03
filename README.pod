@@ -1,35 +1,25 @@
-=head1 Import
-
-Import data from QLD DNRM Ground Water db .txt files to Hydstra.\n");
-  - Developed for Arrow Energy Pty. Ltd. by Sholto Maud\n");
-  \n");
-  Notes:\n");
-  1. This importer caches data in a provisional, dated SQLite database\n");
-     for further processing\n");
-  2. The SQLite db is located at [$sqlite3]\n");
-  3. The import also performs some provisional cleansing of the data by \n");
-       removing unclosed quote ("), (') characters that exist in the \n));
-       DNRM GWDB files\n));
-       \n));
-       For Queries Contact: \n));
-       e: sholto.maud\@gmail.com\n));
-       m: +61(0)424 094 227\n));
-
-
 =head1 VERSION
 
 Version 0.01
 
 =head1 SYNOPSIS
 
-Use this module to import data from dnrm gwdb 
+Use this module to import data from pipe "|" delimited QLD DNRM Ground Water db .txt files to Hydstra.
+  
+Notes:
+
+  1. This importer caches data in a provisional, dated SQLite database for further processing
+  2. The SQLite db is located at $Bin\db by default
+  3. The import also performs some provisional cleansing of the data by removing unclosed quote (") or (') characters that exist in the DNRM GWDB files making the db invalid on import
 
 Code snippet.
 
   use DNRMGWDB;
   
   my $import = DNRMGWDB->new( 
-   
+    db_dir      => DB_DIR,
+    db_name     => 'gwdb.db',
+    import_dir  => 'C:\\temp\\dnrmdata'
   );
 
   $import->import_to_sqlite;

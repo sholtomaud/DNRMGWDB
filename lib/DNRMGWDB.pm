@@ -24,9 +24,9 @@ Use this module to import data from pipe "|" delimited QLD DNRM Ground Water db 
   
 Notes:
 
-  1. This importer caches data in a provisional, dated SQLite database for further processing
-  2. The SQLite db is located at $Bin\db by default
-  3. The import also performs some provisional cleansing of the data by removing unclosed quote (") or (') characters that exist in the DNRM GWDB files making the db invalid on import
+1. This importer caches data in a provisional, dated SQLite database for further processing
+2. The SQLite db is located at $Bin\db by default
+3. The import also performs some provisional cleansing of the data by removing unclosed quote (") or (') characters that exist in the DNRM GWDB files making the db invalid on import
 
 Code snippet.
 

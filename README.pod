@@ -67,7 +67,7 @@ Code snippet.
 
 =head1 SUBROUTINES/METHODS
 
-=head2 import_to_sqlite()
+=head2 connect_to_db()
   
 Imports the QLD DNRM "|" delimited Ground Water Database files to a dated temp SQLite database,
 

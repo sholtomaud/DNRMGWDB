@@ -4,6 +4,19 @@ use lib "$Bin/lib";
 use DNRMGWDB;
 use Data::Dumper;
 use constant DB_DIR => $Bin.'/gwdb/'; 
+#use constant TABLE_DEFINITION_DIR => "$Bin/../lib/DNRMGWDB/config";
+
+use File::Temp qw(tempdir);
+use Cwd;
+ 
+my $dir = tempdir( CLEANUP => 1 );
+print cwd, "\n";
+chdir $dir;
+print cwd, "\n";
+
+
+my $think = use lib "$FindBin::Bin/../lib";
+
 
 mkdir DB_DIR if (! -d DB_DIR );
 
@@ -21,6 +34,9 @@ my $import = DNRMGWDB->new(
  
  print "table_definition [".Dumper($table_definition)."]\n"; 
  #my @elements = $table_definition->{elements};
- print " $_->{dnrm_key} $_->{dnrm_name} $_->{type} $_->{hydstra_table}\n" for @{$table_definition->{elements}}; #[0]{required};
+ print " [$_->{dnrm_key_field}] [$_->{dnrm_field}] [$_->{sqlite_type}] \n" for @{$table_definition->{elements}}; #[0]{required};
+ 
+print "think [$think] TABLE_DEFINITION_DI [.". TABLE_DEFINITION_DIR ."]";
+ 
  #print "required [".Dumper(\@elements)."]\n";
  print "done\n";

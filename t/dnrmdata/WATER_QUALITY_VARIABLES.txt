@@ -1,0 +1,297 @@
+"VARIABLE_NO"|"NAME"|"UNIT_CODE"|"UNITS"|"SHORTNAME"|"COMMNT"|"MINIMUM"|"MAXIMUM"|"ACCURACY"|"PRECISION"
+2010|Electrical Conductivity  @ 25C|MISC|Microsiemens/cm|Conductivity @ 25C (uS/cm)||0|0|0|1
+2010.5|Electrical Conductivity  @ 25C (Field)|MISC|Microsiemens/cm|Conductivity @ 25C FLD||0|0|0|1
+2065|Air Temperature|DEGC|Degrees celcius|Air Temperature ()||0|0|0|.00001
+2065.5|Air Temperature (Field)|DEGC|Degrees celcius|Air Temperature () FLD||0|0|1|.00001
+2080.5|Water Temperature (Field)|DEGC|Degrees celcius|Water Temperature  FLD||0|0|1|.1
+2100.5|pH (Field)|PH|pH units|pH (pH units) FLD||1|14|1|.1
+2113|Total Alkalinity as CaCO3|MGL|Milligrams/Litre|Total Alkalinity as CaCO3 (mg/L)||0|0|0|.00001
+2113.5|Total Alkalinity as CaCO3 (Field)|MGL|Milligrams/Litre|Total Alkalinity as CaCO3 FLD||0|0|1|.00001
+2123.2|Alkalinity Hydroxide as OH|MGL|Milligrams/Litre|Hydroxide as OH (mg/L)||0|0|2|.00001
+2124|Alkalinity Carbonate as CO3|MGL|Milligrams/Litre|Carbonate as CO3 (mg/L)||0|0|1|.00001
+2125|Alkalinity Bicarbonate as HCO3|MGL|Milligrams/Litre|Bicarbonate as HCO3 (mg/L)||0|0|1|.00001
+2131|Hardness as CaCO3 (measured)|MGL|Milligrams/Litre|Hardness as CaCO3 (measured) (Milligrams||0|0|0|.00001
+2330.2|Total Nitrogen - suspended|MGL|Milligrams/Litre|Total Nitrogen - suspended (mg/L)||0|0|2|.00001
+2331|Nitrate as NO3|MGL|Milligrams/Litre|Nitrate as NO3(mg/L)||0|0|1|.00001
+2333|Nitrate + nitrite as N - total|MGL|Milligrams/Litre|Nitrate + nitrite as N - total (mg/L)||0|0|3|.00001
+2336|Kjeldahl Nitrogen|MGL|Milligrams/Litre|Kjeldahl Nitrogen (mg/L)||0|0|1|.00001
+2337|Total Nitrogen|MGL|Milligrams/Litre|Total Nitrogen (mg/L)||0|0|2|.00001
+2337.2|Total Nitrogen|MGL|Milligrams/Litre|Total Nitrogen (mg/L)||0|0|2|.00001
+2343|Nitrate+nitrite as N soluble (FieldFilt)|MGL|Milligrams/Litre|Nitrate+nitrite as N soluble (FieldFilt)||0|0|3|.00001
+2343.2|Nitrate+nitrite as N soluble (FieldFilt)|MGL|Milligrams/Litre|Nitrate+nitrite as N soluble (FieldFilt)||0|0|3|.00001
+2345|Ammonia as N - soluble (Field filtered)|MGL|Milligrams/Litre|Ammonia as N - soluble (Field Filtered)||0|0|3|.00001
+2345.2|Ammonia as N - soluble (Field filtered)|MGL|Milligrams/Litre|Ammonia as N - soluble (Field filtered)||0|0|3|.00001
+2350.2|Kjeldahl Nitrogen - dissolved|MGL|Milligrams/Litre|Kjeldahl Nitrogen - dissolved (mg/L)||0|0|2|.00001
+2351|Oxygen (Dissolved)|MGL|Milligrams/Litre|Oxygen (Dissolved) (mg/L)||0|0|0|.00001
+2351.5|Oxygen (Dissolved) (Field)|MGL|Milligrams/Litre|Oxygen (Dissolved) (mg/L)FLD||0|0|1|.00001
+2355|Total Dissolved Nitrogen (Field- Filtered)|MGL|Milligrams/Litre|Total Dissolved Nitrogen (Field- Filter)||.02|999|2|.00001
+2355.2|Total Dissolved Nitrogen (Field- Filtered)|MGL|Milligrams/Litre|Total Dissolved Nitrogen (Field- Filter)||.02|999|2|.00001
+2356.2|Organic Nitrogen - dissolved|MGL|Milligrams/Litre|Organic Nitrogen - dissolved (mg/L)||0|0|2|.00001
+2363|Total Phosphorus as P|MGL|Milligrams/Litre|Total Phosphorus as P    (mg/L)||0|0|3|.00001
+2365|Total React P (Ortho P) - soluble (FldF)|MGL|Milligrams/Litre|Total React P (Ortho P) - soluble (FldF)||0|0|3|.00001
+2365.2|Total React P (Ortho P) - soluble (FldF)|MGL|Milligrams/Litre|Total React P (Ortho P) - soluble (FldF)||0|0|3|.00001
+2368|Total Phosphorus- dissolved (Field- filtered)|MGL|Milligrams/Litre|Total Phosphorus- dissolved (Field-filt)||.002|999|3|.00001
+2368.2|Total Phosphorus- dissolved (Field- filtered)|MGL|Milligrams/Litre|Total Phosphorus- dissolved (Field-filt)||0|0|3|.00001
+2370.2|Organic Phospherous - dissolved|MGL|Milligrams/Litre|Organic Phospherous - dissolved||0|0|2|.00001
+2375.2|Total Phospherous - suspended|MGL|Milligrams/Litre|Total Phospherous -suspended||0|0|2|.00001
+2501|Aluminium as Al - total|MGL|Milligrams/Litre|Aluminium as Al - total (Milligrams/Litr||0|0|0|.00001
+2501.01|Aluminium as Al - total (lower LOR)|MGL|Milligrams/Litre|Aluminum   Total|ICPAES|.01|25|2|.00001
+2501.02|Aluminium as AL - total (finer LOR)|MGL|Milligrams/Litre|Aluminium|ICP-MS|0|0|3|.00001
+2502.02|Aluminium as Al - soluble (finer LOR)|MGL|Milligrams/Litre|Aluminium Dissolved|ICP-MS|0|0|3|.00001
+2504|Aluminium as Al - total (ug/L)|UT|Micrograms/Litre|Aluminium as Al - total (ug/L)||0|0|0|.00001
+2511|Antimony as Sb - total|MGL|Milligrams/Litre|Antimony as Sb - total (Milligrams/Litre||0|0|0|.00001
+2511.2|Antimony as Sb - total|MGL|Milligrams/Litre|Antimony as Sb - total (Milligrams/Litre||0|0|2|.00001
+2521|Arsenic as As - total|MGL|Milligrams/Litre|Arsenic as As - total (Milligrams/Litre)||0|0|0|.00001
+2521.01|Arsenic as As - total (lower LOR)|MGL|Milligrams/Litre|Arsenic soluble|GFAAS|.005|.05|5|.00001
+2521.02|Arsenic as Ar - total (finer LOR)|MGL|Milligrams/Litre|Arsenic|ICP-MS|0|0|4|.00001
+2521.2|Arsenic as As - total|MGL|Milligrams/Litre|Arsenic as As - total (Milligrams/Litre)||0|0|2|.00001
+2522.02|Arsenic as Ar - soluble (finer LOR)|MGL|Milligrams/Litre|Arsenic Dissolved|ICP-MS|0|0|4|.00001
+2524|Arsenic as As - total ug/L|UT|Micrograms/Litre|Arsenic as As - total (Micrograms/Litre)||0|0|3|.00001
+2531|Barium as Ba - total|MGL|Milligrams/Litre|Barium as Ba - total (Milligrams/Litre)||0|0|0|.00001
+2532|Barium as Ba - soluble|MGL|Milligrams/Litre|Barium as Ba - soluble (Milligrams/Litre||0|0|0|.00001
+2540|Beryllium - total|MGL|Milligrams/Litre|Beryllium - total (Milligrams/Litre)||0|0|5|.00001
+2540.2|Beryllium - total|MGL|Milligrams/Litre|Beryllium - total (Milligrams/Litre)|Previously incorrectly named as Bismuth as Bi - total|0|0|5|.00001
+2541.2|Bismuth as Bi - total|MGL|Milligrams/Litre|Bismuth as Bi - total (Milligrams/Litre)||0|0|2|.00001
+2561|Bromide as Br|MGL|Milligrams/Litre|Bromide as Br (Milligrams/Litre)||0|0|0|.00001
+2561.2|Bromide as Br|MGL|Milligrams/Litre|Bromide as Br (Milligrams/Litre)||0|0|0|.00001
+2571|Cadmium as Cd - total|MGL|Milligrams/Litre|Cadmium as Cd - total (Milligrams/Litre)||0|0|0|.00001
+2571.01|Cadmium as Cd - total (lower LOR)|MGL|Milligrams/Litre|Cadimum Total|ICPAES|0|0|3|.00001
+2571.02|Cadmium as Cd - total (finer LOR)|MGL|Milligrams/Litre|Cadmium|ICP-MS|0|0|4|.00001
+2571.2|Cadmium as Cd - total|MGL|Milligrams/Litre|Cadmium as Cd - total (Milligrams/Litre)||0|0|0|.00001
+2572|Cadmium as Cd - soluble|MGL|Milligrams/Litre|Cadmium as Cd - soluble (Milligrams/Litr||0|0|0|.00001
+2572.02|Cadmium as Cd - soluble (finer LOR)|MGL|Milligrams/Litre|Cadmium Dissolved|ICP-MS|0|0|4|.00001
+2574|Cadmium as Cd - total|UT|Micrograms/Litre|Cadmium as Cd total (ug/L)||0|0|1|.00001
+2575|Cadmium as Cd - soluble (ug/L)|UT|Micrograms/Litre|Cadmium as Cd - soluble (ug/L)||0|0|1|.00001
+2601|Chromium as Cr - total|MGL|Milligrams/Litre|Chromium as Cr - total (Milligrams/Litre||0|0|0|.00001
+2601.01|Chromium as Cr - total (lower LOR)|MGL|Milligrams/Litre|Chromium Total|ICPAES|.002|.1|3|.00001
+2601.02|Chromium as Cr - total (finer LOR)|MGL|Milligrams/Litre|Chromium|ICP-MS|0|0|4|.00001
+2601.2|Chromium as Cr - total|MGL|Milligrams/Litre|Chromium as Cr - total (Milligrams/Litre||0|0|0|.00001
+2602|Chromium as Cr - soluble|MGL|Milligrams/Litre|Chromium as Cr - soluble (Milligrams/Lit||0|0|0|.00001
+2602.02|Chromium as Cr - soluble (finer LOR)|MGL|Milligrams/Litre|Chromium Dissolved|ICP-MS|0|0|4|.00001
+2605|Chromium as Cr - total|UT|Micrograms/Litre|Chromium as Cr tot (ug/L)||0|0|0|.00001
+2611|Cobalt as Co - total|MGL|Milligrams/Litre|Cobalt as Co - total (Milligrams/Litre)||0|0|0|.00001
+2611.2|Cobalt as Co - total|MGL|Milligrams/Litre|Cobalt as Co - total (Milligrams/Litre)||0|0|3|.00001
+2621|Copper as Cu - total|MGL|Milligrams/Litre|Copper as Cu - total (Milligrams/Litre)||0|0|0|.00001
+2621.01|Copper as Cu - total (lower LOR)|MGL|Milligrams/Litre|Copper total|ICPAES|.005|5|3|.00001
+2621.02|Copper as Cu - total (finer LOR)|MGL|Milligrams/Litre|Copper|ICP-MS|0|0|3|.00001
+2621.2|Copper as Cu - total|MGL|Milligrams/Litre|Copper as Cu - total (Milligrams/Litre)||0|0|0|.00001
+2622|Copper as Cu - soluble|MGL|Milligrams/Litre|Copper as Cu soluble mg/L||0|0|2|.00001
+2622.02|Copper as Cu - soluble (finer LOR)|MGL|Milligrams/Litre|Copper Dissolved|ICP-MS|0|0|3|.00001
+2624|Copper as Cu - total|UT|Micrograms/Litre|Copper as Cu total (ug/L)||0|0|0|.00001
+2661|Iodine as I|MGL|Milligrams/Litre|Iodine as I (Milligrams/Litre)||0|0|0|.00001
+2671.2|Iodide as I|MGL|Milligrams/Litre|Iodide as I (Milligrams/Litre)||0|0|2|.00001
+2681|Iron as Fe - total|MGL|Milligrams/Litre|Iron as Fe - total (Milligrams/Litre)||0|0|0|.00001
+2681.01|Iron as Fe - total (lower LOR)|MGL|Milligrams/Litre|Iron total|ICPAES|.01|125|2|.00001
+2681.02|Iron as Fe - total (finer LOR)|MGL|Milligrams/Litre|Iron|ICP-MS|0|0|3|.00001
+2681.2|Iron as Fe - total|MGL|Milligrams/Litre|Iron as Fe - total (Milligrams/Litre)||0|0|0|.00001
+2682|Iron as Fe - soluble|MGL|Milligrams/Litre|Iron as Fe soluble (mg/L)||0|0|2|.00001
+2682.02|Iron as Fe - soluble (finer LOR)|MGL|Milligrams/Litre|Iron Dissolved|ICP-MS|0|0|3|.00001
+2684|Iron as Fe - total|UT|Micrograms/Litre|Iron as Fe total (ug/L)||0|0|-1|.00001
+2685|Iron as Fe - soluble ug/L|UT|Micrograms/Litre|Iron as Fe - soluble (Micrograms/Litre)||0|0|-1|.00001
+2690.2|Iron(II) Ferrozine|MGL|Milligrams/Litre|Fe(II)|W_FERROZ|0|0|5|.000001
+2691|Lead as Pb - total|MGL|Milligrams/Litre|Lead as Pb - total (Milligrams/Litre)||0|0|0|.00001
+2691.01|Lead as Pb - total (lower LOR)|MGL|Milligrams/Litre|Lead total|GFAAS|.005|.05|3|.00001
+2691.02|Lead as Pb - total (finer LOR)|MGL|Milligrams/Litre|Lead|ICP-MS|0|0|4|.00001
+2691.2|Lead as Pb - total|MGL|Milligrams/Litre|Lead as Pb - total (Milligrams/Litre)||0|0|0|.00001
+2692|Lead as Pb - soluble|MGL|Milligrams/Litre|Lead as Pb - soluble (Milligrams/Litre)||0|0|0|.00001
+2692.02|Lead as Pb - soluble (finer LOR)|MGL|Milligrams/Litre|Lead Dissolved|ICP-MS|0|0|4|.00001
+2694|Lead as Pb - total|UT|Micrograms/Litre|Lead as Pb total (ug/L)||0|0|0|.00001
+2695|Lead as Pb - soluble|UT|Micrograms/Litre|Lead as Pb - soluble (Micrograms/Litre)||0|0|0|.00001
+2701|Lithium as Li - total|MGL|Milligrams/Litre|Lithium as Li - total (Milligrams/Litre)||0|0|0|.00001
+2701.2|Lithium as Li - total|MGL|Milligrams/Litre|Lithium as Li - total (Milligrams/Litre)||0|0|3|.00001
+2702|Lithium as Li - soluble|MGL|Milligrams/Litre|Lithium as Li - soluble Mg/L||0|0|0|.00001
+2711|Manganese as Mn - total|MGL|Milligrams/Litre|Manganese as Mn - total (Milligrams/Litr||0|0|0|.00001
+2711.01|Manganese as Mn - total (lower LOR)|MGL|Milligrams/Litre|Manganese total|ICPAES|.01|20|2|.00001
+2711.02|Manganese as Mn - total (finer LOR)|MGL|Milligrams/Litre|Manganese|ICP-MS|0|0|4|.00001
+2711.2|Manganese as Mn - total|MGL|Milligrams/Litre|Manganese as Mn - total (Milligrams/Litr||0|0|0|.00001
+2712|Manganese as Mn - soluble|MGL|Milligrams/Litre|Manganese as Mn soluble   (mg/L)||0|0|2|.00001
+2712.02|Manganese as Mn - soluble (finer LOR)|MGL|Milligrams/Litre|Manganese Dissolved|ICP-MS|0|0|4|.00001
+2714|Manganese as Mn - total|UT|Micrograms/Litre|Manganese as Mn tot (ug/L)||0|0|-1|.00001
+2715|Manganese as Mn - soluble|UT|Micrograms/Litre|Manganese as Mn - soluble (ug/L)||0|0|-1|.00001
+2721|Mercury as Hg - total|MGL|Milligrams/Litre|Mercury as Hg total (mg/L)||0|0|1|.00001
+2731|Molybdenum as Mo - total|MGL|Milligrams/Litre|Molybdenum as Mo - total (Milligrams/Lit||0|0|0|.00001
+2731.2|Molybdenum as Mo - total|MGL|Milligrams/Litre|Molybdenum as Mo - total (Milligrams/Lit||0|0|2|.00001
+2741|Nickel as Ni - total|MGL|Milligrams/Litre|Nickel as Ni - total (Milligrams/Litre)||0|0|0|.00001
+2741.01|Nickel as Ni -total|MGL|Milligrams/Litre|Nickel total|ICPAES|.005|.1|3|.00001
+2741.02|Nickel as Ni - total (finer LOR)|MGL|Milligrams/Litre|Nickel|ICP-MS|0|0|4|.00001
+2741.2|Nickel as Ni - total|MGL|Milligrams/Litre|Nickel as Ni - total (Milligrams/Litre)||0|0|0|.00001
+2742|Nickel as Ni - soluble|MGL|Milligrams/Litre|Nickel as Ni - soluble (Milligrams/Litre||0|0|0|.00001
+2742.02|Nickel as Ni - soluble (finer LOR)|MGL|Milligrams/Litre|Nickel Dissolved|ICP-MS|0|0|4|.00001
+2744|Nickel as Ni - total|UT|Micrograms/Litre|Nickel as Ni total (ug/L)||0|0|0|.00001
+2745|Nickel as Ni - soluble|UT|Micrograms/Litre|Nickel as Ni - soluble (Micrograms/Litre||0|0|0|.00001
+2751|Selenium as Se - total|MGL|Milligrams/Litre|Selenium as Se - total (Milligrams/Litre||0|0|0|.00001
+2751.01|Selenium as Se - total (lower LOR)|MGL|Milligrams/Litre|Selenium total (lower LOR)||0|0|2|.00001
+2751.2|Selenium as Se - total|MGL|Milligrams/Litre|Selenium as Se - total (Milligrams/Litre||0|0|2|.00001
+2771|Silver as Ag - total|MGL|Milligrams/Litre|Silver as Ag - total (Milligrams/Litre)||0|0|0|.00001
+2771.2|Silver as Ag - total|MGL|Milligrams/Litre|Silver as Ag - total (Milligrams/Litre)||0|0|2|.00001
+2781|Strontium as Sr - total|MGL|Milligrams/Litre|Strontium as Sr - total (Milligrams/Litr||0|0|0|.00001
+2781.2|Strontium as Sr - total|MGL|Milligrams/Litre|Strontium as Sr - total (Milligrams/Litr||0|0|2|.00001
+2782|Strontium as Sr - soluble|MGL|Milligrams/Litre|Strontium as Sr - soluble (Milligrams/Li||0|0|0|.00001
+2791|Tin as Sn - total|MGL|Milligrams/Litre|Tin as Sn - total (Milligrams/Litre)||0|0|0|.00001
+2801|Titanium as Ti - total|MGL|Milligrams/Litre|Titanium as Ti - total (Milligrams/Litre||0|0|0|.00001
+2801.2|Titanium as Ti - total|MGL|Milligrams/Litre|Titanium as Ti - total (Milligrams/Litre||0|0|2|.00001
+2811|Vanadium as V - total|MGL|Milligrams/Litre|Vanadium as V - total (Milligrams/Litre)||0|0|0|.00001
+2811.2|Vanadium as V - total|MGL|Milligrams/Litre|Vanadium as V - total (Milligrams/Litre)||0|0|2|.00001
+2821|Zinc as Zn - total|MGL|Milligrams/Litre|Zinc as Zn - total (Milligrams/Litre)||0|0|0|.00001
+2821.01|Zinc as Zn -soluble (lower LOR)|MGL|Milligrams/Litre|||0|0|2|.00001
+2821.02|Zinc as Zn - total (finer LOR)|MGL|Milligrams/Litre|Zinc|ICP-MS|0|0|3|.00001
+2821.2|Zinc as Zn - total|MGL|Milligrams/Litre|Zinc as Zn - total (Milligrams/Litre)||0|0|0|.00001
+2822|Zinc as Zn - soluble|MGL|Milligrams/Litre|Zinc as Zn soluble (mg/L)||0|0|2|.00001
+2822.02|Zinc as Zn - soluble (finer LOR)|MGL|Milligrams/Litre|Zinc Dissolved|ICP-MS|0|0|3|.00001
+2824|Zinc as Zn - total ug/L|UT|Micrograms/Litre|Zinc as Zn - total ug/L||0|0|-1|.00001
+2825|Zinc as Zn - soluble|UT|Micrograms/Litre|Zinc as Zn - soluble (Micrograms/Litre)||0|0|-1|.00001
+2891|Uranium - total|UT|Micrograms/Litre|Uranium - total (Micrograms/Litre)||0|0|0|.00001
+2901|Carbon Dioxide as CO2|MGL|Milligrams/Litre|Carbon Dioxide as CO2 (Milligrams/Litre)||0|0|0|.00001
+3001|Biochem Oxygen Demand (BOD)|MGL|Milligrams/Litre|Biochem Oxygen Demand (BOD) (Milligrams/||0|0|0|.00001
+3011|Chemical Oxygen Demand (COD)|MGL|Milligrams/Litre|Chemical Oxygen Demand (COD) (Milligrams||0|0|0|.00001
+3020|Total Carbon (TC)|MGL|Milligrams/Litre|Total Carbon (TC) (Milligrams/Litre)||0|0|0|.000001
+3021|Total Organic Carbon (TOC)|MGL|Milligrams/Litre|Total Organic Carbon (TOC) (Milligrams/L||0|0|0|.00001
+3026|Dissolved Organic Carbon|MGL|Milligrams/Litre|Dissolved Organic Carbon (Milligrams/Lit||0|0|0|.00001
+3026.2|Dissolved Organic Carbon|MGL|Milligrams/Litre|Dissolved Organic Carbon (Milligrams/Lit||0|0|1|.00001
+3106|Total DDT|UT|Micrograms/Litre|Total DDT (Micrograms/Litre)||0|0|1|.00001
+3113|Nonachlor Trans|UT|Micrograms/Litre|Nonachlor Trans||0|0|1|.000001
+3114|Oxychlordane|UT|Micrograms/Litre|Oxychlordane||0|0|1|.000001
+3115|Chlordene|UT|Micrograms/Litre|Chlordene||0|0|1|.000001
+3116|Chlordene Epoxide|UT|Micrograms/Litre|Chlordene Epoxide||0|0|1|.000001
+3117|DDE (op)|UT|Micrograms/Litre|DDE (op)||0|0|1|.00001
+3119|3\0444'-DDT (op)|UT|Micrograms/Litre|3\0444'-DDT (op)||0|0|1|.00001
+3120|3\0444'-DDD (op)|UT|Micrograms/Litre|3\0444'-DDD (op)||0|0|1|.00001
+3121|Aldrin                      309-00-2|UT|Micrograms/Litre|Aldrin                      309-00-2 (Mi||0|0|1|.00001
+3122|Chlordane Total         57-74-9|UT|Micrograms/Litre|Chlordane Total||0|0|1|.00001
+3123|Chlordane - alpha   5103-71-9|UT|Micrograms/Litre|Chlordane alpha||0|0|1|.00001
+3124|Chlordane - gamma  5103-74-2|UT|Micrograms/Litre|Chlordane gamma||0|0|1|.00001
+3126|4\0444'-DDD (pp)             72-54-8|UT|Micrograms/Litre|4\0444'-DDD               72-54-8 (Micro||0|0|1|.00001
+3127|4\0444'-DDE (pp)             72-55-9|UT|Micrograms/Litre|4\0444'-DDE    (ug/L)||0|0|1|.00001
+3128|4\0444'-DDT (pp)             50-29-3|UT|Micrograms/Litre|4\0444'-DDT               50-29-3 (Micro||0|0|2|.00001
+3129|Dieldrin                    60-57-1|UT|Micrograms/Litre|Dieldrin                    60-57-1 (Mic||0|0|1|.00001
+3130|Endosulfan(alpha isomer)959-98-8|UT|Micrograms/Litre|Endosulfan(alpha isomer) (ug/L)||0|0|2|.00001
+3131|Endosulfan(beta isomer)33213-65-9|UT|Micrograms/Litre|Endosulfan(beta isomer)   (ug/L)||0|0|2|.00001
+3132|Endosulfan sulfate 1031-07-8|UT|Micrograms/Litre|Endosulfan sulfate (ug/L)||0|0|2|.00001
+3133|Endrin                            72-20-8|UT|Micrograms/Litre|Endrin                            72-20-||0|0|0|.00001
+3134|Endrin aldehyde          7421-93-4|UT|Micrograms/Litre|Endrin aldehyde          7421-93-4 ()||0|0|0|.00001
+3135|HCH(alpha isomer)       319-84-6|UT|Micrograms/Litre|HCH(alpha isomer)       319-84-6 ()||0|0|1|.00001
+3136|HCH(beta isomer)        319-85-7|UT|Micrograms/Litre|HCH(beta isomer)        319-85-7 ()||0|0|1|.00001
+3137|HCH(delta isomer)       319-86-8|UT|Micrograms/Litre|HCH(delta isomer)       319-86-8 ()||0|0|1|.00001
+3138|HCH(gamma isomer)Lindane58-89-9|UT|Micrograms/Litre|HCH(gamma isomer)Lindane58-89-9 ()||0|0|1|.00001
+3139|Heptachlor                  76-44-8|UT|Micrograms/Litre|Heptachlor                  76-44-8 ()||0|0|1|.00001
+3140|Heptachlor epoxide   1024-57-3|UT|Micrograms/Litre|Heptachlor epoxide   1024-57-3 ()||0|0|1|.00001
+3141|Hexachlorobenzene   118-74-1|UT|Micrograms/Litre|Hexachlorobenzene   118-74-1 ()||0|0|0|.00001
+3142|Methoxychlor             72-43-5|UT|Micrograms/Litre|Methoxychlor             72-43-5 ()||0|0|0|.00001
+3149|Endosulfan Lactone|UT|Micrograms/Litre|Endosulfan Lactone||0|0|1|.000001
+3150|Endosulfan ether|UT|Micrograms/Litre|Endosulfan ether  (ug/L)||0|0|1|.00001
+3151|Endosulfan Total|UT|Micrograms/Litre|Endosulfan Total  (ug/L)||0|0|2|.00001
+3153|HCB|UT|Micrograms/Litre|HCB||0|0|1|.00001
+3186|Imidacloprid HLOR KHSP09|UT|Micrograms/Litre|Imidacloprid HLOR KHSP09|LOR 0.01|0|0|2|.00001
+3316|Chlorpyrifos-methyl|UT|Micrograms/Litre|Chlorpyrifos-methyl ug/L||0|0|2|.00001
+3317|Chlorpyrifos oxon|UT|Micrograms/Litre|Chlorpyrifos oxon||0|0|1|.000001
+3320.01|Chlorfenvinphos (lower LOR)|UT|Micrograms/Litre|Chlorfenvinphos (lower LOR)||0|0|1|.00001
+3323|Azinphos (ethyl)      2642-71-9|UT|Micrograms/Litre|Azinphos (ethyl)      2642-71-9 (Microgr||0|0|0|.00001
+3324|Azinphos (methyl)    86-50-0-9|UT|Micrograms/Litre|Azinphos (methyl)    86-50-0-9 (Microgra||0|0|0|.00001
+3326|Chlorpyrifos              2921-88-2|UT|Micrograms/Litre|Chlorpyrifos    ug/L||0|0|2|.00001
+3326.01|Chlorpyrifos (lower LOR)|UT|Micrograms/Litre|Chlorpyrifos (lower LOR)||0|0|1|.00001
+3327|Coumaphos              56-72-4|UT|Micrograms/Litre|Coumaphos              56-72-4 (Microgra||0|0|0|.00001
+3330|Diazinon              333-41-5|UT|Micrograms/Litre|Diazinon              333-41-5 (Microgra||0|0|0|.00001
+3331|Dichlorvos          62-73-7|UT|Micrograms/Litre|Dichlorvos          62-73-7 (Micrograms/||0|0|0|.00001
+3332.01|Dimethoate (lower LOR)|UT|Micrograms/Litre|Dimethoate (lower LOR)||0|0|1|.00001
+3335|Malathion                121-75-5|UT|Micrograms/Litre|Malathion                121-75-5 (Micro||0|0|0|.00001
+3338|Mevinphos              7786-34-7|UT|Micrograms/Litre|Mevinphos              7786-34-7 (Microg||0|0|0|.00001
+3340|Parathion (ethyl)      56-38-2|UT|Micrograms/Litre|Parathion (ethyl)      56-38-2 (Microgra||0|0|0|.00001
+3341|Parathion (methyl)   298-00-0|UT|Micrograms/Litre|Parathion (methyl) (ug/L)||0|0|1|.00001
+3342.01|Profenofos (lower LOR)|UT|Micrograms/Litre|Profenofos (lower LOR)||0|0|1|.00001
+3343|Phorate                   298-02-2|UT|Micrograms/Litre|Phorate                   298-02-2 (Micr||0|0|0|.00001
+3361|Methidathion|UT|micrograms/Litre|Methidathion||0|0|1|.00001
+3362|Fenamiphos|UT|micrograms/litre|Fenamiphos||0|0|1|.00001
+3363|Ethoprophos|UT|Micrograms/Litre|Ethoprophos||0|0|1|.00001
+3364|Fenitrothion|UT|Micrograms/Litre|Fenitrothion||0|0|1|.00001
+3367|Pirimiphos methyl|UT|Micrograms/Litre|Pirimiphos methyl||0|0|1|.00001
+3369|Prothiophos|UT|Micrograms/Litre|Prothiophos||0|0|1|.00001
+3370|Cadusafos|UT|Micrograms/Litre|Cadusafos||0|0|1|.000001
+3371|Carbophenthion|UT|Micrograms/Litre|Carbophenthion||0|0|1|.000001
+3372|Etrimphos|UT|Micrograms/Litre|Etrimphos||0|0|1|.000001
+3373|Famphur|UT|Micrograms/Litre|Famphur||0|0|1|.000001
+3374|Fenchlorphos|UT|Micrograms/Litre|Fenchlorphos||0|0|1|.000001
+3375|Fenthion ethyl|UT|Micrograms/Litre|Fenthion ethyl||0|0|1|.000001
+3376|Fenthion methyl|UT|Micrograms/Litre|Fenthion methyl||0|0|1|.000001
+3377|Isophenphos|UT|Micrograms/Litre|Isophenphos||0|0|1|.000001
+3378|Phosmet|UT|Micrograms/Litre|Phosmet||0|0|1|.000001
+3379|Pyrazophos|UT|Micrograms/Litre|Pyrazophos||0|0|1|.000001
+3380|Tetrachlorvinphos|UT|Micrograms/Litre|Tetrachlorvinphos||0|0|1|.000001
+3381|Terbufos|UT|Micrograms/Litre|Terbufos||0|0|1|.000001
+3391|Bromophos Ethyl|MGL|Milligrams/Litre|Bromophos Ethyl (Milligrams/Litre)||0|0|0|.00001
+3392|Ethion|MGL|Milligrams/Litre|Ethion (Milligrams/Litre)||0|0|0|.00001
+3393|Ethion|UT|micrograms/Litre|Ethion (ug/L)||0|0|1|.00001
+3519|Tri-allate|UT|micrograms/Litre|Tri-allate||0|0|1|.00001
+3521|Propoxur             114-26-1|UT|Micrograms/Litre|Propoxur             114-26-1 (Microgram||0|0|5|.00001
+3529.01|Carbaryl (lower LOR)|UT|Micrograms/Litre|Carbaryl (lower LOR)||0|0|1|.00001
+3536|Benalaxyl|UT|Micrograms/Litre|Benalaxyl||0|0|1|.000001
+3537|Bitertinol|UT|Micrograms/Litre|Bitertinol||0|0|1|.000001
+3538|Dichlorfluanid|UT|Micrograms/Litre|Dichlorfluanid||0|0|1|.000001
+3539|Dichloran|UT|Micrograms/Litre|Dichloran||0|0|1|.000001
+3540|Fipronil|UT|Micrograms/Litre|Fipronil||0|0|1|.000001
+3541|Furalaxyl|UT|Micrograms/Litre|Furalaxyl||0|0|1|.000001
+3542|Metalaxyl|UT|Micrograms/Litre|Metalaxyl||0|0|1|.000001
+3543|Oxadiazinon|UT|Micrograms/Litre|Oxadiazinon||0|0|1|.000001
+3544|Pirimicarb|UT|Micrograms/Litre|Pirimicarb||0|0|1|.000001
+3545|Tebuconazole|UT|Micrograms/Litre|Tebuconazole||0|0|1|.000001
+3546|Tetradifon|UT|Micrograms/Litre|Tetradifon||0|0|1|.000001
+3547|Vinclozolin|UT|Micrograms/Litre|Vinclozolin||0|0|1|.000001
+3703.01|Piperonyl Butoxide (lower LOR)|UT|Micrograms/Litre|Piperonyl Butoxide (lower LOR)||0|0|1|.00001
+3722|Deltamethrin   ???52918-63-5|UT|Micrograms/Litre|Deltamethrin   ???52918-63-5 (Micrograms||0|0|0|.00001
+3724|Fenvalerate            51630-58-1|UT|Micrograms/Litre|Fenvalerate            51630-58-1 (Micro||0|0|0|.00001
+3725|Cypermethrin            52315-07-8|UT|Micrograms/Litre|Cypermethrin            52315-07-8 (Micr||0|0|1|.00001
+3726|Fluvalinate            69409-94-5|UT|Micrograms/Litre|Fluvalinate            69409-94-5 (Micro||0|0|0|.00001
+3729|Bifenthrin|UT|micrograms/litre|Bifenthrin (ug/L)||0|0|1|.00001
+3730|Cyfluthrin|UT|Micrograms/Litre|Cyfluthrin||0|0|1|.000001
+3731|Iambda-Cyhalothrin|UT|Micrograms/Litre|Iambda-Cyhalothrin||0|0|1|.000001
+3732|Phenothrin|UT|Micrograms/Litre|Phenothrin||0|0|1|.000001
+3733|Tetramethrin|UT|Micrograms/Litre|Tetramethrin||0|0|1|.000001
+3734|Transfluthrin|UT|Micrograms/Litre|Transfluthrin||0|0|1|.000001
+3735|Allethrin|UT|Micrograms/Litre|Allethrin||0|0|1|.000001
+3736|Bioresmethrin|UT|Micrograms/Litre|Bioresmethrin||0|0|1|.000001
+3923|Oxyfluorfen              42874-03-3|UT|Micrograms/Litre|Oxyfluorfen              42874-03-3 (Mic||0|0|1|.00001
+3925|Permethrin               52645-53-1|UT|Micrograms/Litre|Permethrin               52645-53-1 (Mic||0|0|0|.00001
+3926|Dicofol (Kelthane)     115-32-2|UT|Micrograms/Litre|Dicofol (Kelthane)     115-32-2 (Microgr||0|0|0|.00001
+4018.01|Amertryn (lower LOR)|UT|micrograms/Litre|Amertryn (lower LOR)||0|0|2|.00001
+4019|Tebuthiuron|UT|Micrograms/Litre|Tebuthiuron|\034Graslan\034|0|0|2|.00001
+4019.01|Tebuthiuron (lower LOR)|UT|Micrograms/Litre|Tebuthiuron (lower LOR)||0|0|1|.00001
+4020|Picloram|UT|Micrograms/Litre|Picloram||0|0|1|.00001
+4021.01|Simazine|UT|Micrograms/Litre|Simazine||0|0|2|.00001
+4022|Propazine  139-40-2|UT|Micrograms/Litre|Propazine  139-40-2 (Micrograms/Litre)||0|0|1|.00001
+4024.01|Atrazine (lower LOR)|UT|Micrograms/Litre|Atrazine (lower LOR)||0|0|2|.00001
+4025.01|Prometryne (lower LOR)|UT|Micrograms/Litre|Prometryne (lower LOR)||0|0|2|.00001
+4026|Terbuthylazine|UT|micrograms/litre|Terbuthylazine||0|0|1|.1
+4027.01|Terbutryn (lower LOR)|UT|Micrograms/Litre|Terbutryn (lower LOR) (ug/L)|Reporting limit 0.01|0|0|2|.000001
+4034.01|Desisopropyl Atrazine (lower LOR)|UT|Micrograms/Litre|Desisopropyl Atrazine (lower LOR)||0|0|2|.00001
+4035.01|Desethyl Atrazine (lower LOR)|UT|Micrograms/Litre|Desethyl Atrazine (lower LOR)||0|0|2|.00001
+4221.01|Fluometuron (lower LOR)|UT|Micrograms/Litre|Fluometuron (lower LOR)||0|0|2|.00001
+4222.01|Diuron (lower LOR)|UT|Micrograms/Litre|Diuron (lower LOR)||0|0|2|.00001
+4420|MCPB|UT|Micrograms/Litre|MCPB||0|0|1|.000001
+4421|Mecoprop           93-65-2|UT|Micrograms/Litre|Mecoprop           93-65-2 (Micrograms/L||0|0|0|.00001
+4422|4-chloro-o-Tolyloxyacetic acid (MCPA)|UT|Micrograms/Litre|4-chloro-o-Tolyloxyacetic acid (MCPA) (M||0|0|1|.00001
+4423|2\0444-D               94-75-7|UT|Micrograms/Litre|2\0444-D            94-75-7 (Micrograms/||0|0|1|.00001
+4424|Dicamba             1918-00-9|UT|Micrograms/Litre|Dicamba             1918-00-9 (Microgram||0|0|1|.00001
+4425|2\0444\0445-T             93-76-5|UT|Micrograms/Litre|2\0444\0445-T       93-76-5 (Micrograms/||0|0|1|.00001
+4426|2\0444\0445-TP (Silvex)      93-72-1|UT|Micrograms/Litre|2\0444\0445-TP (Silvex)93-72-1 (Microgra||0|0|1|.00001
+4427|2\0444-DB|UT|Micrograms/Litre|2\0444-DB||0|0|1|.00001
+4428|2\0444-DP|UT|Micrograms/Litre|2\0444-DP||0|0|1|.000001
+4429|Diclofop methyl|UT||Diclofop methyl||0|0|1|.000001
+4440|Haloxyfop 2-methyl|UT|Micrograms/Litre|Haloxyfop 2-methyl||0|0|1|.000001
+4441|Haloxyop 2-etotyl|UT|Micrograms/Litre|Haloxyop 2-etotyl||0|0|1|.000001
+4442|Triclopyr|UT||Triclopyr||0|0|1|.000001
+4443|Fluroxypyr|UT|Micrograms/Litre|Fluroxypyr||0|0|1|.000001
+4446|Clopyralid|UT|Micrograms/Litre|Clopyralid||0|0|1|.000001
+4500|Propanil|UT||Propanil||0|0|1|.000001
+4626|Trifluralin        1582-09-8|UT|Micrograms/Litre|Trifluralin      (ug/L)||0|0|1|.00001
+4634.01|Bromacil (lower LOR)|UT|Micrograms/Litre|Bromacil (lower LOR) (ug/L)|Reporting limit 0.01|0|0|2|.00001
+4636|Pendimethalin      40487-42-1|UT|Micrograms/Litre|Pendimethalin      40487-42-1||0|0|1|.00001
+4637.01|Metolachlor (lower LOR)|UT|Micrograms/Litre|Metolachlor (lower LOR)    (ug/L)|Reporting limit 0.01|0|0|2|.00001
+4638|Haloxyfop|UT|Micrograms/Litre|Haloxyfop (Micrograms/Litre)||0|0|1|.000001
+4642.01|Hexazinone (lower LOR)|UT|micrograms/Litre|Hexazinone (lower LOR)||0|0|2|.00001
+4650|Metribuzin|UT|Micrograms/Litre|Metribuzin||0|0|1|.000001
+4951|Procymidone|UT|micrograms/Litre|Procymidone||0|0|1|.00001
+4952|Propiconazole|UT|micrograms/Litre|Propiconazole||0|0|1|.00001
+6101|Total Plate Count|SCAL|Colony Forming units|Total Plate Count  CFU/mL|Hetrotrophic Colony Count|0|0|0|.00001
+6111|Total Coliform|SCAL|Colony Forming units|Total Coliform CFU/100 mL||0|0|0|.00001
+6112|Faecal Coliform|SCAL|Colony Forming units|Faecal Coliform  CFU/100 mL||0|0|0|.00001
+6114|E. coli|SCAL|Colony Forming units|E. coli  CFU/100 mL||0|0|0|.00001
+7540|Thallium - total|MGL|Milligrams/Litre|Thallium - total||0|0|0|.00001

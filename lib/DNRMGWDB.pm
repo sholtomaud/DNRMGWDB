@@ -95,7 +95,7 @@ use constant DEFAULT_TABLE_DEFINITION_DIR => $Bin.'/lib/dnrmgwdb/config/';
  has 'import_dir' => ( is => 'rw', isa => 'Str', required => 1); 
  has 'import_file' => ( is => 'rw', isa => 'Str', required => 1); 
  has 'table_definition_dir' => ( is => 'rw', isa => 'Str', required => 1, default => DEFAULT_TABLE_DEFINITION_DIR); 
- has 'dnrm_table' => ( is => 'rw', isa => 'Str' ); 
+ has 'dnrm_table_config' => ( is => 'rw', isa => 'Str' ); 
  has 'date'  => ( is => 'rw', isa => 'Num',  default => sub { ((localtime)[5] + 1900 ). (localtime)[4] . (localtime)[3] } ); 
  has 'time'  => ( is => 'rw', isa => 'Num', default => sub { (localtime)[2] . (localtime)[1] . (localtime)[0] }); 
 
@@ -122,7 +122,6 @@ sub connect_to_db{
   my $self = shift;
   my $db = $self->db_dir.$self->db_name;
   my $db_dir = $self->db_dir;
-  my $import_file = $self->import_file;
   
   #Make the db dir if it doesn't exist
   mkdir ($self->db_dir) if ( ! -d $self->db_dir);
@@ -151,9 +150,6 @@ sub connect_to_db{
     return FAIL;
   };
   
-  print "import_file [$import_file], import_dir [$db_dir]\n";
-  
-  
 }
 
 
@@ -165,12 +161,13 @@ Load the table definitions and mappings from json config file
 
 sub load_table_definition{
   my $self = shift;
-  print "table def [".$self->table_definition_dir."]\n";
-  my $import_file = $self->table_definition_dir.$self->dnrm_table.'.json';
+  print "table dir [".$self->table_definition_dir."]\n";
+  my $import_file = $self->table_definition_dir.$self->dnrm_table_config.'.json';
+  print "table config file [$import_file]\n";
   my $json;
   {
     local $/; #Enable 'slurp' mode
-    open my $fh, "<", $import_file or die print "couldn't open config file [$import_file]\n";
+    open my $fh, "<", lc($import_file) or die print "couldn't open config file [$import_file]\n";
     $json = <$fh>;
     close $fh;
   };
@@ -178,6 +175,23 @@ sub load_table_definition{
   return $data;
 }
 
+
+=head2 import_data()
+  
+Import data from DNRM GWDB "|" delmited .txt file
+
+=cut
+
+
+sub import_data{
+  my $self = shift;
+  
+  my $import_file = $self->import_file;
+  print "import_file [$import_file]\n";
+  
+
+
+}
 
 
 

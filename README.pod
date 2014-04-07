@@ -75,6 +75,10 @@ Imports the QLD DNRM "|" delimited Ground Water Database files to a dated temp S
   
 Load the table definitions and mappings from json config file
 
+=head2 import_data()
+  
+Import data from DNRM GWDB "|" delmited .txt file
+
 =skip
 sub readfiles{ 
   my $d = $self->import_dir;

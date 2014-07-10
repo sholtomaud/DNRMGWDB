@@ -1,0 +1,383 @@
+{
+	"foreign_table_sqlprepare": "INSERT INTO FORIEGN_REGISTRATION VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )",
+	"foreign_table_sqlmapping": "INSERT INTO SITE (SITE, LATITUDE, LONGITUDE) SELECT (RN, LATITUDE, LONGITUDE ) FROM FORIEGN_REGISTRATION",
+	"foreign_table_multiple_lines": 1,
+	"elements": [{
+		"foreign_field": "rn",
+		"foreign_sqlite_type": "numeric",
+		"foreign_table": "registration",
+		"foreign_key_field": 1,
+		"hydstra_mappings": [{
+			"field": "station",
+			"table": "site"
+		},
+		{
+			"table": "gwhole",
+			"field": "station"
+		},
+		{
+			"field": "station",
+			"table": "gwpipe"
+		},
+		{
+			"field": "station",
+			"table": "pumptest"
+		},
+		{
+			"field": "station",
+			"table": "aresite"
+		}]
+	},
+	{
+		"hydstra_mappings": [{
+			"table": "site",
+			"field": "stntype"
+		}],
+		"foreign_key_field": 0,
+		"foreign_table": "registration",
+		"foreign_sqlite_type": "text",
+		"foreign_field": "facility_type"
+	},
+	{
+		"foreign_key_field": 0,
+		"foreign_table": "registration",
+		"foreign_sqlite_type": "text",
+		"foreign_field": "office"
+	},
+	{
+		"foreign_key_field": 0,
+		"foreign_table": "registration",
+		"foreign_field": "shire_code",
+		"foreign_sqlite_type": "numeric"
+	},
+	{
+		"foreign_key_field": 0,
+		"foreign_table": "registration",
+		"foreign_field": "parish",
+		"foreign_sqlite_type": "text"
+	},
+	{
+		"foreign_table": "registration",
+		"foreign_sqlite_type": "text",
+		"foreign_field": "rn_replaces",
+		"foreign_key_field": 0
+	},
+	{
+		"foreign_table": "registration",
+		"foreign_field": "do_file",
+		"foreign_sqlite_type": "text",
+		"foreign_key_field": 0
+	},
+	{
+		"foreign_key_field": 0,
+		"foreign_field": "ro_file",
+		"foreign_sqlite_type": "text",
+		"foreign_table": "registration"
+	},
+	{
+		"foreign_key_field": 0,
+		"foreign_sqlite_type": "text",
+		"foreign_field": "ho_file",
+		"foreign_table": "registration"
+	},
+	{
+		"hydstra_mappings": [{
+			"table": "gwhole",
+			"field": "conststat"
+		}],
+		"foreign_key_field": 0,
+		"foreign_table": "registration",
+		"foreign_sqlite_type": "text",
+		"foreign_field": "facility_status"
+	},
+	{
+		"foreign_table": "registration",
+		"foreign_sqlite_type": "text",
+		"foreign_field": "drilled_date",
+		"hydstra_mappings": [{
+			"field": "startdate",
+			"table": "gwhole"
+		},
+		{
+			"table": "gwhole",
+			"field": "enddate"
+		},
+		{
+			"field": "testdate",
+			"table": "pumptest"
+		}],
+		"foreign_key_field": 0
+	},
+	{
+		"foreign_table": "registration",
+		"foreign_field": "driller_name",
+		"foreign_sqlite_type": "text",
+		"foreign_key_field": 0
+	},
+	{
+		"foreign_key_field": 0,
+		"foreign_table": "registration",
+		"foreign_sqlite_type": "text",
+		"foreign_field": "drilling_comp"
+	},
+	{
+		"foreign_table": "registration",
+		"foreign_field": "basin",
+		"foreign_sqlite_type": "text",
+		"hydstra_mappings": [{
+			"table": "site",
+			"field": "category1"
+		}],
+		"foreign_key_field": 0
+	},
+	{
+		"foreign_table": "registration",
+		"foreign_sqlite_type": "text",
+		"foreign_field": "method_const",
+		"hydstra_mappings": [{
+			"table": "gwhole",
+			"field": "constmeth"
+		}],
+		"foreign_key_field": 0
+	},
+	{
+		"foreign_sqlite_type": "text",
+		"foreign_field": "sub_area",
+		"foreign_table": "registration",
+		"foreign_key_field": 0
+	},
+	{
+		"hydstra_mappings": [{
+			"field": "lot",
+			"table": "aresite"
+		}],
+		"foreign_key_field": 0,
+		"foreign_table": "registration",
+		"foreign_sqlite_type": "blob",
+		"foreign_field": "lot"
+	},
+	{
+		"foreign_sqlite_type": "text",
+		"foreign_field": "plan",
+		"foreign_table": "registration",
+		"foreign_key_field": 0,
+		"hydstra_mappings": [{
+			"field": "plan",
+			"table": "aresite"
+		}]
+	},
+	{
+		"foreign_key_field": 0,
+		"hydstra_mappings": [{
+			"field": "comment",
+			"table": "site"
+		}],
+		"foreign_field": "description",
+		"foreign_sqlite_type": "text",
+		"foreign_table": "registration"
+	},
+	{
+		"foreign_table": "registration",
+		"foreign_field": "county",
+		"foreign_sqlite_type": "text",
+		"foreign_key_field": 0
+	},
+	{
+		"foreign_table": "registration",
+		"foreign_sqlite_type": "text",
+		"foreign_field": "property_name",
+		"hydstra_mappings": [{
+			"field": "property",
+			"table": "aresite"
+		}],
+		"foreign_key_field": 0
+	},
+	{
+		"foreign_table": "registration",
+		"foreign_sqlite_type": "real",
+		"foreign_field": "lat",
+		"hydstra_mappings": [{
+			"table": "site",
+			"field": "latitude"
+		}],
+		"foreign_key_field": 0
+	},
+	{
+		"hydstra_mappings": [{
+			"table": "site",
+			"field": "longitude"
+		}],
+		"foreign_key_field": 0,
+		"foreign_table": "registration",
+		"foreign_sqlite_type": "real",
+		"foreign_field": "lng"
+	},
+	{
+		"hydstra_mappings": [{
+			"table": "site",
+			"field": "easting"
+		}],
+		"foreign_key_field": 0,
+		"foreign_table": "registration",
+		"foreign_sqlite_type": "real",
+		"foreign_field": "easting"
+	},
+	{
+		"foreign_field": "northing",
+		"foreign_sqlite_type": "real",
+		"foreign_table": "registration",
+		"foreign_key_field": 0,
+		"hydstra_mappings": [{
+			"field": "northing",
+			"table": "site"
+		}]
+	},
+	{
+		"foreign_table": "registration",
+		"foreign_sqlite_type": "text",
+		"foreign_field": "zone",
+		"hydstra_mappings": [{
+			"table": "site",
+			"field": "zone"
+		}],
+		"foreign_key_field": 0
+	},
+	{
+		"hydstra_mappings": [{
+			"table": "site",
+			"field": "posacc"
+		}],
+		"foreign_key_field": 0,
+		"foreign_table": "registration",
+		"foreign_sqlite_type": "text",
+		"foreign_field": "accuracy"
+	},
+	{
+		"foreign_key_field": 0,
+		"hydstra_mappings": [{
+			"table": "site",
+			"field": "posacc"
+		}],
+		"foreign_sqlite_type": "real",
+		"foreign_field": "gps_accuracy",
+		"foreign_table": "registration"
+	},
+	{
+		"foreign_table": "registration",
+		"foreign_field": "gis_lat",
+		"foreign_sqlite_type": "real",
+		"hydstra_mappings": [{
+			"field": "latitude",
+			"table": "site"
+		}],
+		"foreign_key_field": 0
+	},
+	{
+		"hydstra_mappings": [{
+			"field": "longitude",
+			"table": "site"
+		}],
+		"foreign_key_field": 0,
+		"foreign_table": "registration",
+		"foreign_sqlite_type": "real",
+		"foreign_field": "gis_lng"
+	},
+	{
+		"foreign_table": "registration",
+		"foreign_field": "checked",
+		"foreign_sqlite_type": "text",
+		"foreign_key_field": 0
+	},
+	{
+		"foreign_key_field": 0,
+		"foreign_field": "map_scale",
+		"foreign_sqlite_type": "text",
+		"foreign_table": "registration"
+	},
+	{
+		"foreign_key_field": 0,
+		"foreign_sqlite_type": "text",
+		"foreign_field": "map_series",
+		"foreign_table": "registration"
+	},
+	{
+		"foreign_table": "registration",
+		"foreign_sqlite_type": "text",
+		"foreign_field": "map_no",
+		"hydstra_mappings": [{
+			"field": "mapname",
+			"table": "site"
+		}],
+		"foreign_key_field": 0
+	},
+	{
+		"foreign_key_field": 0,
+		"foreign_sqlite_type": "text",
+		"foreign_field": "prog_sect",
+		"foreign_table": "registration"
+	},
+	{
+		"foreign_key_field": 0,
+		"hydstra_mappings": [{
+			"table": "pumptest",
+			"field": "equipment"
+		}],
+		"foreign_field": "equipment",
+		"foreign_sqlite_type": "text",
+		"foreign_table": "registration"
+	},
+	{
+		"foreign_key_field": 0,
+		"foreign_field": "orig_name_no",
+		"foreign_sqlite_type": "text",
+		"foreign_table": "registration"
+	},
+	{
+		"foreign_key_field": 0,
+		"foreign_field": "polygon",
+		"foreign_sqlite_type": "text",
+		"foreign_table": "registration"
+	},
+	{
+		"foreign_key_field": 0,
+		"foreign_table": "registration",
+		"foreign_sqlite_type": "text",
+		"foreign_field": "confidential"
+	},
+	{
+		"foreign_sqlite_type": "text",
+		"foreign_field": "data_owner",
+		"foreign_table": "registration",
+		"foreign_key_field": 0,
+		"hydstra_mappings": [{
+			"table": "site",
+			"field": "owner"
+		}]
+	},
+	{
+		"foreign_field": "bore_line_code",
+		"foreign_sqlite_type": "text",
+		"foreign_table": "registration",
+		"foreign_key_field": 0
+	},
+	{
+		"foreign_sqlite_type": "text",
+		"foreign_field": "driller_licence_number",
+		"foreign_table": "registration",
+		"foreign_key_field": 0
+	},
+	{
+		"foreign_key_field": 0,
+		"foreign_field": "log_received_date",
+		"foreign_sqlite_type": "text",
+		"foreign_table": "registration"
+	},
+	{
+		"foreign_sqlite_type": "text",
+		"foreign_field": "shape",
+		"foreign_table": "registration",
+		"foreign_key_field": 0
+	}],
+	"foreign_table_sqlcreate": "CREATE TABLE IF NOT EXISTS FORIEGN_REGISTRATION ( Rn NUMERIC,  Facility_type TEXT,  Office TEXT,  Shire_code NUMERIC,  Parish TEXT,  Rn_replaces TEXT,  Do_file TEXT,  Ro_file TEXT,  Ho_file TEXT,  Facility_status TEXT,  Drilled_date TEXT,  Driller_name TEXT,  Drilling_comp TEXT,  Basin TEXT,  Method_const TEXT,  Sub_area TEXT,  Lot BLOB,  Plan TEXT,  Description TEXT,  County TEXT, Lat REAL,  Lng REAL,  Easting REAL,  Northing REAL,  Zone TEXT,  Accuracy TEXT,  Gps_accuracy REAL,  Gis_lat REAL,  Gis_lng REAL,  Checked TEXT,  Map_scale TEXT,  Map_series TEXT,  Map_no TEXT,  Prog_sect TEXT,  Equipment TEXT,  Orig_name_no TEXT,  Polygon TEXT, Data_owner TEXT,  Bore_line_code TEXT,  Driller_licence_number TEXT,  Log_received_date TEXT,   PRIMARY KEY (Rn))",
+	"foreign_table_name": "registration"
+}

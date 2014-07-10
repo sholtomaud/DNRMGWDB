@@ -125,7 +125,6 @@ my  %data_type_mapping = (
                                   {plan => 'text'},
                                   {description => 'text'},
                                   {county => 'text'},
-                                  {property_name => 'text'},
                                   {lat => 'real'},
                                   {lng => 'real'},
                                   {easting => 'real'},
@@ -143,12 +142,10 @@ my  %data_type_mapping = (
                                   {equipment => 'text'},
                                   {orig_name_no => 'text'},
                                   {polygon => 'text'},
-                                  {confidential => 'text'},
                                   {data_owner => 'text'},
                                   {bore_line_code => 'text'},
                                   {driller_licence_number => 'text'},
-                                  {log_received_date => 'text'},
-                                  {shape => 'text'}
+                                  {log_received_date => 'text'}
                                 ],
                                 
                   water_quality_variables =>   [#strata_log.txt
@@ -311,8 +308,6 @@ my  %data_type_mapping = (
                                   {labsampref => 'text'},
                                   {recdate => 'text'},
                                   {inputsrc => 'text'},
-                                  {enteredby => 'text'},
-                                  {checkedby => 'text'},
                                   {commnt => 'text'}
                                 ]
   );
@@ -1006,8 +1001,11 @@ foreach my $table ( keys %data_type_mapping ){
   my $data;
   $tableCount++;
   open my $fh, ">", DB_DIR."$table.json";
-  $data->{'table'} = $table;
-  $data->{'multiple_rows'} = 1;
+  
+  my $uctable = uc($table);
+  my $primary_key = 'PRIMARY KEY (';
+  my $create;
+  my $vals;
   
   my @fields = @{$data_type_mapping{$table}} ;
   foreach my $fld ( 0..$#fields ) {
@@ -1054,16 +1052,33 @@ foreach my $table ( keys %data_type_mapping ){
       
       my $key = ( defined $primary_keys{$table}{$field} )? 1 : 0;
       #$data->{'elements'}[$fld]{'default'} = '';
-      $data->{'elements'}[$fld]{'dnrm_field'} = $field;
-      $data->{'elements'}[$fld]{'dnrm_table'} = $table;
-      $data->{'elements'}[$fld]{'dnrm_key_field'} = $key;
-      $data->{'elements'}[$fld]{'sqlite_type'} = $fields[$fld]{$field};
+      $data->{'elements'}[$fld]{'foreign_field'} = $field;
+      $data->{'elements'}[$fld]{'foreign_table'} = $table;
+      $data->{'elements'}[$fld]{'foreign_key_field'} = $key;
+      $data->{'elements'}[$fld]{'foreign_sqlite_type'} = $fields[$fld]{$field};
       #$data->{'elements'}[$fld]{'hydstra_table'} = $hytable;
+      my $ucfirst_field = ucfirst($field);
+      $primary_key .= ( defined $primary_keys{$table}{$field} )? "$ucfirst_field, " :'';
+      my $sql_type = uc($fields[$fld]{$field});
+      $create .= " $ucfirst_field $sql_type, ";
+      $vals .= '?, '; 
     }
+    
   }
+  $primary_key =~ s{\, $}{\)};
+  $create =~ s{\, $}{};
+  $vals =~ s{\, $}{};
+  
+  $data->{'foreign_table_sqlcreate'} = "CREATE TABLE IF NOT EXISTS FORIEGN_$uctable ($create, $primary_key)";
+  $data->{'foreign_table_sqlprepare'} = "INSERT INTO FORIEGN_$uctable VALUES ($vals)";
+  $data->{'foreign_table_sqlmapping'} = "INSERT INTO SITE (SITE, LATITUDE, LONGITUDE) SELECT (RN, LATITUDE, LONGITUDE ) FROM FORIEGN_$uctable";
+  $data->{'foreign_table_name'} = $table;
+  $data->{'foreign_table_multiple_lines'} = 1;
+  
   print $fh encode_json($data);
 }
-
+my $out = DB_DIR;
+print "output to [$out]";
 
 1;  
   

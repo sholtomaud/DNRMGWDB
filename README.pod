@@ -18,10 +18,6 @@ This importer caches data in a provisional, dated SQLite database for further pr
 
 The SQLite db is located at $Bin\db by default
 
-=item 3 
-
-The import also performs some provisional cleansing of the data by removing unclosed quote (") or (') characters that exist in the DNRM GWDB files making the db invalid on import
-
 =back 
 
 Code snippet.
